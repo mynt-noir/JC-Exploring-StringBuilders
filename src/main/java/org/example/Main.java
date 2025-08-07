@@ -29,11 +29,9 @@ public class Main {
         // Exercise 3: delete() - Deleting Content
         System.out.println("--- EXERCISE 3 ---");
         StringBuilder sb3 = new StringBuilder("This is a test sentence.");
-        // Deletes " a test"
         sb3.delete(8, 16);
         System.out.println("After delete(8, 16): " + sb3);
 
-        // Deletes the character at index 4 (the ' ')
         sb3.deleteCharAt(4);
         System.out.println("After deleteCharAt(4): " + sb3);
         System.out.println();
@@ -59,15 +57,12 @@ public class Main {
         System.out.println("--- EXERCISE 6 ---");
         StringBuilder sb6 = new StringBuilder("The quick brown fox jumps over the lazy dog.");
 
-        // Substring returns a String, it does not modify the StringBuilder
         String sub = sb6.substring(16, 19);
         System.out.println("Substring: " + sub);
 
-        // indexOf works just like in String
         int indexOfFox = sb6.indexOf("fox");
         System.out.println("Index of 'fox': " + indexOfFox);
 
-        // Searching for a word that doesn't exist
         int indexOfCat = sb6.indexOf("cat");
         System.out.println("Index of 'cat': " + indexOfCat);
         System.out.println();
@@ -78,10 +73,8 @@ public class Main {
         StringBuilder sb7 = new StringBuilder("Status: ");
         sb7.append("Pending");
 
-        // Now, we need a final, unchangeable String
         String finalStatus = sb7.toString();
 
-        // Let's try to change the StringBuilder again
         sb7.append(" - Approved");
 
         System.out.println("StringBuilder: " + sb7);
